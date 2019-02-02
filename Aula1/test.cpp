@@ -1,9 +1,15 @@
 #include <iostream>
-using namespace std;
+#include <vector>
+
 
 int main(int argc, char const *argv[])
 {
     /* code */
-    cout << "Hello" << endl;
+    std::vector<int> d;
+
+    for(int i = 0; i<10; i++){ 
+        d.push_back(i);
+        std::cout << d[i] << "\n";
+    }
     return 0;
 }
